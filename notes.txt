@@ -1,0 +1,11 @@
+npm install --save bootstrap
+Bootstrap is added in the list of dependencies in package.json 
+
+Once the bootstrap is installed in our project, we have to inform the CLI to include bootstrap files in the final bundle it creates. 
+By default Angular CLI won’t include the bootstrap CSS files in the bundle it creates when running the application.
+We can add the location of the Bootstrap CSS inside the “styles” array of the angular.json file.
+
+"styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ]
